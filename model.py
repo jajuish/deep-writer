@@ -62,3 +62,5 @@ class Model():
         grads, _ = tf.clip_by_global_norm(tf.gradients(self.cost, tvars),5)
         optimizer = tf.train.AdamOptimizer(self.lr)
         self.train_op = optimizer.apply_gradients(zip(grads, tvars))
+
+    #def test(self,)
